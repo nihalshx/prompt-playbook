@@ -60,3 +60,15 @@ table th {
 .nav-list .nav-list-item.active > .nav-list-link {
   font-weight: 700;
 }
+
+// ─── Layout Fixes ──────────────────────────────────────────────────────────
+// Fix missing top padding on newer versions of Just the Docs
+.site-header,
+.side-bar .site-header {
+  padding-top: 2rem !important;
+}
+
+.search,
+.main-header {
+  padding-top: 2rem !important;
+}
