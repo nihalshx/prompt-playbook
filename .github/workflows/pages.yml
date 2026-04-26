@@ -29,7 +29,8 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: |
+          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" > error.txt 2>&1 || (git config user.name "bot" && git config user.email "bot@example.com" && git add error.txt && git commit -m "Add error.txt" && git pull --rebase && git push && exit 1)
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
