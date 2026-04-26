@@ -1,0 +1,19 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+scripts/results/
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db

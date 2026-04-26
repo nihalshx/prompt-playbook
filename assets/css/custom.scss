@@ -1,0 +1,67 @@
+---
+---
+
+// Import Just the Docs base styles
+@import "{{ site.theme }}";
+
+// ─── Custom Styles ─────────────────────────────────────────────────────────
+
+// Technique rating stars
+.rating {
+  color: #f5a623;
+  letter-spacing: 2px;
+}
+
+// Prompt code blocks — distinguish weak vs improved
+.language-prompt-weak pre,
+pre.weak-prompt {
+  border-left: 4px solid #e74c3c;
+  background-color: #fdf2f2;
+}
+
+.language-prompt-improved pre,
+pre.improved-prompt {
+  border-left: 4px solid #27ae60;
+  background-color: #f2fdf5;
+}
+
+// Verdict box
+.verdict {
+  background: #f8f9fa;
+  border-left: 4px solid #3b5bdb;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+// Technique metadata header
+.technique-meta {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+// Consistency: table headers
+table th {
+  background-color: #f1f3f5;
+}
+
+// Callout adjustments
+.callout.warning {
+  border-left-color: #e67e22;
+}
+
+// Code block labels
+.code-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+}
+
+// Navigation active item
+.nav-list .nav-list-item.active > .nav-list-link {
+  font-weight: 700;
+}
